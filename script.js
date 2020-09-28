@@ -32,7 +32,7 @@ d3.csv("cities.csv", d3.autoType).then((data) => {
     .append("text")
     .attr("x", (d, i) => d.x)
     .attr("y", (d, i) => d.y)
-    .text((d) => (d.population >= 1000000 ? d.city + "" : ""))
+    .text((d) => (d.population >= 1000000 ? d.country + "" : ""))
     .attr("font-size", (d) => 11)
     .attr("text-anchor", (d) => "middle")
     .attr("dy", 3)
